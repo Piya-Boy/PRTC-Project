@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* loading */
+
+.loader{
+top:0;
+margin:0;
+padding:0;
+width:100%;
+height:100%;
+position:fixed;
+overflow:hidden;
+text-align:center;
+z-index:9999999;
+background-color:rgba(0,0,0,0.5);
+}
+
+.loader-icon{
+position: absolute; top:calc(50% - 100px); left:calc(50% - 100px);
+}
+ 
+/* signin page */
+
+.ftco-section{
+	padding: 7em 0;
+}
+
+.ftco-no-pt{
+	padding-top: 0;
+}
+.ftco-no-pb{
+	padding-bottom: 0;
+}
+
+/* //COVER BG */
+.img-logo{
+    margin: 0 auto;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center center;
+}
+
+
+.wrap{
+	width: 100%;
+	overflow: hidden;
+	background: white;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 10px 34px -15px rgba(0,0,0,0.24);
+	-moz-box-shadow: 0px 10px 34px -15px rgba(0,0,0,0.24);
+	box-shadow: 0px 10px 34px -15px rgba(0,0,0,0.24);
+	.img-logo{
+        margin: 20px auto;
+		height: 200px;
+        width: 200px;
+	}
+}
+
+.login-wrap{
+	position: relative;
+	h3{
+		font-weight: 300;
+	}
+}
+
+
+.form-group{
+	position: relative;
+	z-index: 0;
+	margin-bottom: 20px !important;
+	a{
+		color: lighten(black,50%);
+	}
+}
+
+/* //FORM CONTROL */
+.form-control {
+	height: 48px;
+	background: white;
+	color: black;
+	font-size: 16px;
+	border-radius: 5px;
+	box-shadow: none;
+	border: 1px solid rgba(0,0,0,.1);
+	&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+	  color: rgba(0,0,0,.2) !important;
+	}
+	&::-moz-placeholder { /* Firefox 19+ */
+	  color: rgba(0,0,0,.2) !important;
+	}
+	&:-ms-input-placeholder { /* IE 10+ */
+	  color: rgba(0,0,0,.2) !important;
+	}
+	&:-moz-placeholder { /* Firefox 18- */
+	  color: rgba(0,0,0,.2) !important;
+	}
+	&:focus, &:active {
+		outline: none !important;
+		box-shadow: none;
+		border: 1px solid greenyellow;
+	}
+}
+
+.field-icon {
+	position: absolute;
+	top: 50%;
+	right: 15px;
+	transform: translateY(-50%);
+	color: rgba(0,0,0,.3);
+}
+
+.form-control-placeholder {
+  position: absolute;
+  top: 2px;
+  padding: 7px 0 0 15px;
+  transition: all 400ms;
+  opacity: .6;
+}
+
+.form-control:focus + .form-control-placeholder,
+.form-control:valid + .form-control-placeholder {
+  transform: translate3d(0, -120%, 0);
+  padding: 7px 0 0 0;
+  opacity: 1;
+  text-transform: uppercase;
+  font-size: 12px;
+  letter-spacing: 1px;
+  color: #000;
+  font-weight: 700;
+}
+
