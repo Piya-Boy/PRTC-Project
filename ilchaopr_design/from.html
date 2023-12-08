@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport"
+            content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content />
+        <meta name="author" content />
+        <title>Simple Sidebar - Start Bootstrap Template</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="css/styles.css" rel="stylesheet" />
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+            crossorigin="anonymous">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'
+            rel='stylesheet'>
+
+    </head>
+
+    <body>
+        <div class="d-flex " id="wrapper">
+            <!-- Sidebar-->
+            <div class="bg-white shadow-lg" id="sidebar-wrapper">
+                <div class="sidebar-heading bg-light">Start Bootstrap</div>
+                <div class="list-group-flush list-group ">
+                    <a href="index.html"
+                        class="nav-link list-group-item-action list-group-item-light p-3 ">
+                        <div class="d-flex">
+                            <i class="bx bxs-dashboard bx-sm me-3"></i>
+                            <span class>Dashboard</span>
+                        </div>
+                    </a>
+                    <a href="from.html"
+                        class="nav-link list-group-item-action list-group-item-light p-3 active">
+                        <div class="d-flex">
+                            <i class="bx bxs-dashboard bx-sm me-3"></i>
+                            <span class>From</span>
+                        </div>
+                    </a>
+
+                    <a href="#"
+                        class="nav-link text-danger list-group-item-action list-group-item-light p-3 mt-5">
+                        <div class="d-flex">
+                            <i class="bx bx-log-out bx-sm me-3"></i>
+                            <span class>Logout</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!-- Page content wrapper-->
+            <div id="page-content-wrapper" class>
+                <!-- Top navigation-->
+                <nav
+                    class="navbar navbar-expand-lg navbar-light bg-light shadow-lg">
+                    <div class="container-fluid">
+                        <button class="btn btn-outline-light text-dark"
+                            type="burton" id="sidebarToggle"><i
+                                class='bx bx-menu-alt-left bx-sm'></i></button>
+                        <div class="ms-auto d-flex">
+                            <img class="rounded-circle object-fit-cover"
+                                src="https://i.pravatar.cc/545" width="36"
+                                height="36">
+                        </a>
+                    </div>
+                </nav>
+                <!-- Page content-->
+                <div class="container-fluid p-4">
+                    <h2 class="mb-5"><strong class>From</strong></h2>
+                    <form class="rounded-lg shadow p-3" action method="post"
+                        enctype="multipart/form-data">
+                        <div class="row ">
+                            <h4 class="mb-4"><strong class>รายละเอียดประวัติผู้พิการ</strong></h4>
+                            <div class="col-md-4 col-lg-2 col-sm-2">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_gendr">เพศ</label>
+                                    <select class="form-select" id="pr_gender"
+                                        name="pr_gender"
+                                        aria-label="Default select example"
+                                        required>
+                                        <option selected hidden disabled>---
+                                            กรุณาเลือก --- </option>
+                                        <option value="ชาย">ชาย</option>
+                                        <option value="หญิง">หญิง</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-2 col-sm-5">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_fullname">คำนำหน้าชื่อ นามสกุล</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_fullname" name="pr_fullname"
+                                        placeholder="คำนำหน้าชื่อ นามสกุล"
+                                        required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-2 col-sm-5">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_nickname">ชื่อเล่น</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_nickname" name="pr_nickname"
+                                        placeholder="ชื่อเล่น" required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-2 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_number_id">เลขบัตรประชาชน</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_number_id" name="pr_number_id"
+                                        placeholder="เลขบัตรประชาชน" required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-2 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_birthdate">วันเดือนปีเกิด</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_birthdate" name="pr_birthdate"
+                                        placeholder="วันเดือนปีเกิด" required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-2 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_age">อายุ</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_age" name="pr_age"
+                                        placeholder="อายุ"
+                                        required />
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="px-5 mt-3 mb-3 m-5">
+                        <div class="row">
+                            <h4 class="mb-4"><strong class>ที่อยู่อาศัยของผู้พิการ</strong></h4>
+                            <div class="col-md-4 col-lg-3 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_address_number">บ้านเลขที่</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_address_number"
+                                        name="pr_address_number"
+                                        placeholder="บ้านเลขที่" required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_address_moo">หมู่</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_address_moo"
+                                        name="pr_address_moo"
+                                        placeholder="หมู่" required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_address_soi">ซอย</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_address_soi"
+                                        name="pr_address_soi"
+                                        placeholder="ซอย" required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_address_road">ถนน</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_address_road"
+                                        name="pr_address_road"
+                                        placeholder="ถนน" required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-4 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_address_province">จังหวัด</label>
+                                    <select class="form-select"
+                                        id="pr_address_province"
+                                        name="pr_address_province"
+                                        aria-label="Default select example">
+                                        <option selected hidden disabled>---
+                                            กรุณาเลือก --- </option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-2 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_address_district">อำเภอ</label>
+                                    <select class="form-select"
+                                        id="pr_address_district"
+                                        name="pr_address_district"
+                                        aria-label="Default select example">
+                                        <option selected hidden disabled>---
+                                            กรุณาเลือก --- </option>
+
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-lg-2 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_address_tambom">ตำบล</label>
+                                    <select
+                                        class="form-select pr_address_tambom"
+                                        id="pr_address_tambom"
+                                        name="pr_address_tambom"
+                                        aria-label="Default select example">
+                                        <option selected hidden disabled>---
+                                            กรุณาเลือก --- </option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-lg-2 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_address_zipcode">รหัสไปรษณีย์</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_address_zipcode"
+                                        name="pr_address_zipcode"
+                                        placeholder="รหัสไปรษณีย์" required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-2 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_address_phone">เบอร์โทรศัพท์</label>
+                                    <input type="tel" class="form-control"
+                                        id="pr_address_phone"
+                                        name="pr_address_phone"
+                                        placeholder="เบอร์โทรศัพท์" required />
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="px-5 mt-3 mb-3 m-5">
+                        <div class="row">
+                            <h4 class="mb-4"><strong class>รายละเอียดทางครอบครัว</strong></h4>
+                            <div class="col">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_home_right">ที่อยู่ปัจจุบันเป็นของ</label>
+                                    <select class="form-select"
+                                        id="pr_home_right" name="pr_home_right"
+                                        aria-label="Default select example">
+                                        <option selected hidden disabled>---
+                                            กรุณาเลือก --- </option>
+                                        <option value="บ้านตนเอง">บ้านตนเอง</option>
+                                        <option value="บ้านพ่อแม่">บ้านพ่อแม่</option>
+                                        <option value="บ้านญาติ">บ้านญาติ</option>
+                                        <option value="บ้านเช่า">บ้านเช่า</option>
+                                        <option value="อื่นๆ">อื่นๆ</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col" id="pr_home_right_orther">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_home_right_orther">กรณีที่อยู่อื่นๆ</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_home_right_orther"
+                                        name="pr_home_right_orther"
+                                        placeholder="กรณีที่อยู่อื่นๆ" required />
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_home_status">สถานภาพทางครอบครัว</label>
+                                    <select class="form-select"
+                                        id="pr_home_status"
+                                        name="pr_home_status"
+                                        aria-label="Default select example">
+                                        <option selected hidden disabled>---
+                                            กรุณาเลือก --- </option>
+                                        <option value="โสด">โสด</option>
+                                        <option value="หย่า">หย่า</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_home_people">อาศัยกี่คน</label>
+                                    <select class="form-select"
+                                        id="pr_home_people"
+                                        name="pr_home_people"
+                                        aria-label="Default select example">
+                                        <option selected hidden disabled>---
+                                            กรุณาเลือก --- </option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_home_people_work">จำนวนคนที่ทำงาน</label>
+                                    <select class="form-select"
+                                        id="pr_home_people_work"
+                                        name="pr_home_people_work"
+                                        aria-label="Default select example">
+                                        <option selected hidden disabled>---
+                                            กรุณาเลือก --- </option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_family_salary">รายได้เฉลี่ยครอบครัว</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_family_salary"
+                                        name="pr_family_salary"
+                                        placeholder="รายได้เฉลี่ยครอบครัว"
+                                        required />
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="px-5 mt-3 mb-3 m-5">
+                        <div class="row">
+                            <h4 class="mb-4"><strong class>รายละเอียดทางคู่สมรส</strong></h4>
+                            <div class="col-md-4 col-lg-3 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_mate_fullname">ชื่อ-นามสกุล
+                                        คู่สมรส</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_mate_fullname"
+                                        name="pr_mate_fullname"
+                                        placeholder="ชื่อ-นามสกุล คู่สมรส"
+                                        required />
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-lg-2 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_mate_age">คู่สมรสอายุ</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_mate_age" name="pr_mate_age"
+                                        placeholder="คู่สมรสอายุ" required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_child">จำนวนบุตร</label>
+                                    <select class="form-select" name="pr_child"
+                                        id="pr_child"
+                                        aria-label="Default select example">
+                                        <option selected hidden disabled>---
+                                            กรุณาเลือก --- </option>
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-2 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_son">บุตรชาย</label>
+                                    <select class="form-select" name="pr_son"
+                                        id="pr_son"
+                                        aria-label="Default select example">
+                                        <option selected hidden disabled>---
+                                            กรุณาเลือก --- </option>
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-2 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_daughter">บุตรสาว</label>
+                                    <select class="form-select"
+                                        name="pr_daughter" id="pr_daughter"
+                                        aria-label="Default select example">
+                                        <option selected hidden disabled>---
+                                            กรุณาเลือก --- </option>
+                                        <option value="0">0</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                        <option value="6">6</option>
+                                        <option value="7">7</option>
+                                        <option value="8">8</option>
+                                        <option value="9">9</option>
+                                        <option value="10">10</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="px-5 mt-3 mb-3 m-5">
+                        <div class="row">
+                            <h4 class="mb-4"><strong class>รายละเอียดความพิการ</strong></h4>
+                            <div class="col-md-4 col-lg-3 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_type_disabled">ประเภทความพิการ</label>
+                                    <select class="form-select"
+                                        name="pr_type_disabled"
+                                        id="pr_type_disabled"
+                                        aria-label="Default select example">
+                                        <option selected hidden disabled>---
+                                            กรุณาเลือก --- </option>
+                                        <option value="1">One</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_disability_characteristics">ลักษณะความพิการ</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_disability_characteristics"
+                                        name="pr_disability_characteristics"
+                                        placeholder="ลักษณะความพิการ" required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_cause_disabled">สาเหตุความพิการ</label>
+                                    <select class="form-select"
+                                        name="pr_cause_disabled"
+                                        id="pr_cause_disabled"
+                                        aria-label="Default select example">
+                                        <option selected hidden disabled>---
+                                            กรุณาเลือก --- </option>
+                                        <option value="1">One</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_from_year">ตั้งแต่ปี</label>
+                                    <select class="form-select"
+                                        name="pr_from_year" id="pr_from_yearv"
+                                        aria-label="Default select example">
+                                        <option selected hidden disabled>---
+                                            กรุณาเลือก --- </option>
+                                        <?php
+                                        for($i=2450;$i<=2565;$i++){
+                                        echo "<option value=".$i.">".$i."</option>";
+                                        }
+                                        ?>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_equipment">กายอุปกรณ์ที่ใช้</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_equipment" name="pr_equipment"
+                                        placeholder="กายอุปกรณ์ที่ใช้" required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_orthitics">สภาพกายอุปกรณ์</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_orthitics" name="pr_orthitics"
+                                        placeholder="สภาพกายอุปกรณ์" required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-2 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_orthitics_environment">สภาพกายอุปกรณ์</label>
+                                    <select class="form-select"
+                                        name="pr_orthitics_environment"
+                                        id="pr_orthitics_environment"
+                                        aria-label="Default select example">
+                                        <option selected hidden disabled>---
+                                            กรุณาเลือก --- </option>
+                                        <option value="สะดวกต่อคนพิการ">สะดวกต่อคนพิการ</option>
+                                        <option value="ไม่สะดวกต่อคนพิการ">ไม่สะดวกต่อคนพิการ</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-2 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_registered_date">วันจดทะเบียนคนพิการ</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_registered_date"
+                                        name="pr_registered_date"
+                                        placeholder="วันจดทะเบียนคนพิการ"
+                                        required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-2 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_expire_date">วันบัตรหมดอายุ</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_expire_date"
+                                        name="pr_expire_date"
+                                        placeholder="วันบัตรหมดอายุ" required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_regeneration">การฟื้นฟูทางการแพทย์</label>
+                                    <select class="form-select"
+                                        name="pr_regeneration"
+                                        id="pr_regeneration"
+                                        aria-label="Default select example">
+                                        <option selected hidden disabled>---
+                                            กรุณาเลือก --- </option>
+                                        <option value="ได้รับแล้ว">ได้รับแล้ว</option>
+                                        <option value="ยังไม่ได้รับ">ยังไม่ได้รับ</option>
+                                        <option value="ได้รับเบี้ยยังชีพ">ได้รับเบี้ยยังชีพ</option>
+                                        <option value="อื่นๆ">อื่นๆ</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3 col-sm-4"
+                                id="pr_regeneration_other">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_regeneration_other">การฟื้นฟูทางการแพทย์กรณีอื่นๆ</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_regeneration_other"
+                                        name="pr_regeneration_other"
+                                        placeholder="การฟื้นฟูทางการแพทย์กรณีอื่นๆ"
+                                        required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-2 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_congenital_disease">โรคประจำตัว</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_congenital_disease"
+                                        name="pr_congenital_disease"
+                                        placeholder="โรคประจำตัว" required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-2 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_hospital">สถานพยาบาล</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_hospital" name="pr_hospital"
+                                        placeholder="สถานพยาบาล" required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-2 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_right_heal">สิทธิการรักษา</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_right_heal" name="pr_right_heal"
+                                        placeholder="สิทธิการรักษา" required />
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="px-5 mt-3 mb-3 m-5">
+                        <div class="row">
+                            <h4 class="mb-4"><strong class>ข้อมูลบิดา - มารดา</strong></h4>
+                            <div class="col">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_father_fullname">ชื่อ - นามสกุล
+                                        (บิดา)</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_father_fullname"
+                                        name="pr_father_fullname"
+                                        placeholder="ชื่อ - นามสกุล (บิดา)"
+                                        required />
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_mother_fullname">ชื่อ - นามสกุล
+                                        (มารดา)</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_mother_fullname"
+                                        name="pr_mother_fullname"
+                                        placeholder="ชื่อ - นามสกุล (มารดา)"
+                                        required />
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_parent_status">สถานภาพบิดามารดา</label>
+                                    <select class="form-select"
+                                        name="pr_parent_status"
+                                        id="pr_parent_status"
+                                        aria-label="Default select example">
+                                        <option selected hidden disabled>---
+                                            กรุณาเลือก --- </option>
+                                        <option value="อยู่ร่วมกัน">อยู่ร่วมกัน</option>
+                                        <option value="แยกกันอยู่">แยกกันอยู่</option>
+                                        <option value="บิดาเสียชีวิต">บิดาเสียชีวิต</option>
+                                        <option value="มารดาเสียชีวิต">มารดาเสียชีวิต</option>
+                                        <option value="บิดาและมารดาเสียชีวิต">บิดาและมารดาเสียชีวิต</option>
+                                        <option value="อื่นๆ">อื่นๆ</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col" id="pr_parent_status_other">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_parent_status_other">กรณีอื่นๆ</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_parent_status_other"
+                                        name="pr_parent_status_other"
+                                        placeholder="กรณีอื่นๆ" required />
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="px-5 mt-3 mb-3 m-5">
+                        <div class="row">
+                            <h4 class="mb-4"><strong class>รายละเอียดผู้ดูแลคนพิการ</strong></h4>
+                            <div class="col-md-4 col-lg-2 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_caretaker_fullname">ชื่อ -
+                                        นามสกุล
+                                        (ผู่ดูแลคนพิการ)</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_caretaker_fullname"
+                                        name="pr_caretaker_fullname"
+                                        placeholder="ชื่อ - นามสกุล (ผู่ดูแลคนพิการ)"
+                                        required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-1 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_caretaker_age">อายุ</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_caretaker_age"
+                                        name="pr_caretaker_age"
+                                        placeholder="อายุ" required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-2 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_caretaker_relation">เกี่ยวข้องเป็น</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_caretaker_relation"
+                                        name="pr_caretaker_relation"
+                                        placeholder="เกี่ยวข้องเป็น" required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-2 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_caretaker_idnumber">เลขบัตรประชาชน</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_caretaker_idnumber"
+                                        name="pr_caretaker_idnumber"
+                                        placeholder="เลขบัตรประชาชน" required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-2 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_contact_fullname">ชื่อบุคคลที่ติดต่อได้</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_contact_fullname"
+                                        name="pr_contact_fullname"
+                                        placeholder="ชื่อบุคคลที่ติดต่อได้"
+                                        required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-1 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_contact_age">อายุ</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_contact_age"
+                                        name="pr_contact_age"
+                                        placeholder="อายุ" required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-2 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_contact_relation
+                                ">ความสัมพันธ์</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_contact_relation
+                                "
+                                        name="pr_contact_relation
+                                    " placeholder="ความสัมพันธ์" required />
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-lg-3 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_contact_address">บ้านเลขที่</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_contact_address"
+                                        name="pr_contact_address"
+                                        placeholder="บ้านเลขที่" required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_contact_moo">หมู่</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_contact_moo"
+                                        name="pr_contact_moo" placeholder="หมู่"
+                                        required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_contact_soi">ซอย</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_contact_soi"
+                                        name="pr_contact_soi" placeholder="ซอย"
+                                        required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_contact_road">ถนน</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_contact_road"
+                                        name="pr_contact_road" placeholder="ถนน"
+                                        required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_contact_tambon">ตำบล</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_contact_tambon"
+                                        name="pr_contact_tambon"
+                                        placeholder="ตำบล" required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_contact_district">อำเภอ</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_contact_district"
+                                        name="pr_contact_district"
+                                        placeholder="อำเภอ" required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_contact_province">จังหวัด</label>
+                                    <select class="form-select"
+                                        id="pr_contact_province"
+                                        name="pr_contact_province"
+                                        aria-label="Default select example">
+                                        <option selected>--- กรุณาเลือก ---
+                                        </option>
+                                        <option value="1">One</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3 col-sm-4">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_contact_phone">เบอร์โทรศัพท์</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_contact_phone"
+                                        name="pr_contact_phone"
+                                        placeholder="เบอร์โทรศัพท์" required />
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="px-5 mt-3 mb-3 m-5">
+                        <div class="row">
+                            <h4 class="mb-4"><strong class>รายละเอียดการศึกษาและประกอบอาชีพ</strong></h4>
+                            <div class="col">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_education">ระดับการศึกษาขั้นสูงสุด</label>
+                                    <select class="form-select"
+                                        id="pr_education" name="pr_education"
+                                        aria-label="Default select example">
+                                        <option selected hidden disabled>---
+                                            กรุณาเลือก --- </option>
+                                        <option value="อื่นๆ">One</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-6 col-sm-4"
+                                id="pr_education_other">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_education_other">กรณีการศึกษาอื่นๆ</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_education_other"
+                                        name="pr_education_other"
+                                        placeholder="กรณีการศึกษาอื่นๆ" required />
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="px-5 mt-3 mb-3 m-5">
+                        <div class="row">
+                            <h4 class="mb-4"><strong class>รายละเอียดการประกอบอาชีพ</strong></h4>
+                            <div class="col">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_occupation">การประกอบอาชีพ</label>
+                                    <select class="form-select"
+                                        id="pr_occupation" name="pr_occupation"
+                                        aria-label="Default select example">
+                                        <option selected hidden disabled>---
+                                            กรุณาเลือก ---1</option>
+                                        <option value="อื่นๆ">One</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col" id="pr_occupation_other">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_occupation_other">กรณีการประกอบอาชีพอื่นๆ</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_occupation_other"
+                                        name="pr_occupation_other"
+                                        placeholder="กรณีการประกอบอาชีพอื่นๆ"
+                                        req1uired />
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_occupation_detail">รายละเอียดเกี่ยวกับอาชีพ</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_occupation_detail"
+                                        name="pr_occupation_detail"
+                                        placeholder="รายละเอียดเกี่ยวกับอาชีพ"
+                                        required />
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_occupation_before">อาชีพก่อนได้รับความพิการ</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_occupation_before"
+                                        name="pr_occupation_before"
+                                        placeholder="อาชีพก่อนได้รับความพิการ"
+                                        required />
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_talent">ความสามารถพิเศษ</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_talent" name="pr_talent"
+                                        placeholder="ความสามารถพิเศษ" required />
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="px-5 mt-3 mb-3 m-5">
+                        <div class="row">
+                            <h4 class="mb-4"><strong class>สิ่งที่มุ่งหวัง/อยากทำในอนาคต</strong></h4>
+                            <div class="col">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_future">สิ่งที่มุ่งหวัง/อยากทำในอนาคต</label>
+                                    <textarea class="form-control"
+                                        id="pr_future" name="pr_future"
+                                        placeholder="สิ่งที่มุ่งหวัง/อยากทำในอนาคต"
+                                        aria-label="With textarea"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="px-5 mt-3 mb-3 m-5">
+                        <div class="row">
+                            <h4 class="mb-4"><strong class>สภาพปัญหา</strong></h4>
+                            <div class="col">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_problem">สิ่งที่มุ่งหวัง/อยากทำในอนาคต</label>
+                                    <select class="form-select" id="pr_problem"
+                                        name="pr_problem"
+                                        aria-label="Default select example">
+                                        <option selected hidden disabled>---
+                                            กรุณาเลือก --- </option>
+                                        <option value="ไม่มีงานทำ">ไม่มีงานทำ</option>
+                                        <option value="ไม่มีรายได้">ไม่มีรายได้</option>
+                                        <option
+                                            value="ไม่มีเครื่องช่วยความพิการ">ไม่มีเครื่องช่วยความพิการ</option>
+                                        <option
+                                            value="ถูกทอดทิ้งไม่มีผู้อุปการะเลี้ยงดู">ถูกทอดทิ้งไม่มีผู้อุปการะเลี้ยงดู</option>
+                                        <option value="ไม่ได้รับการรักษาพยาบาล">ไม่ได้รับการรักษาพยาบาล</option>
+                                        <option value="กายอุปกรณ์ชำรุด">กายอุปกรณ์ชำรุด</option>
+                                        <option value="อื่นๆ">อื่นๆ</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col" id="pr_problem_other">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_problem_other">สภาพปัญหากรณีอื่นๆ</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_problem_other"
+                                        name="pr_problem_other"
+                                        placeholder="สภาพปัญหากรณีอื่นๆ"
+                                        required />
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="px-5 mt-3 mb-3 m-5">
+                        <div class="row">
+                            <h4 class="mb-4"><strong class>ข้อมูลพื้นฐาน</strong></h4>
+                            <div class="col-md-4 col-lg-3 col-sm-6">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_self_help">ข้อมูลพื้นฐาน</label>
+                                    <select class="form-select"
+                                        id="pr_self_help" name="pr_self_help"
+                                        aria-label="Default select example">
+                                        <option selected hidden disabled>---
+                                            กรุณาเลือก --- </option>
+                                        <option value="สามารถใช้รถเข็นได้">สามารถใช้รถเข็นได้</option>
+                                        <option
+                                            value="ไม่สามารถช่วยเหลือตนเองได้">ไม่สามารถช่วยเหลือตนเองได้</option>
+                                        <option value="ช่วยเหลือตนเองได้">ช่วยเหลือตนเองได้</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3 col-sm-6">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_parent_occupation">พ่อแม่ประกอบอาชีพ</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_parent_occupation"
+                                        name="pr_parent_occupation"
+                                        placeholder="พ่อแม่ประกอบอาชีพ" required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3 col-sm-6">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_want_help">ความช่วยเหลืออื่นๆ
+                                        ที่ต้องการ</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_want_help" name="pr_want_help"
+                                        placeholder="ความช่วยเหลืออื่นๆ ที่ต้องการ"
+                                        required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3 col-sm-6">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_other_information">ข้อมูลอื่นๆ</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_other_information"
+                                        name="pr_other_information"
+                                        placeholder="ข้อมูลอื่นๆ" required />
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="px-5 mt-3 mb-3 m-5">
+                        <div class="row">
+                            <h4 class="mb-4"><strong class>ข้อมูลผู้ประสานงาน</strong></h4>
+                            <div class="col-md-4 col-lg-3 col-sm-6">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_coordinate_fullname">ผู้ประสานงานชื่อ</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_coordinate_fullname"
+                                        name="pr_coordinate_fullname"
+                                        placeholder="ผู้ประสานงานชื่อ" required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-1 col-sm-6">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_coordinate_nickname">ชื่อเล่น</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_coordinate_nickname"
+                                        name="pr_coordinate_nickname"
+                                        placeholder="ชื่อเล่น" required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3 col-sm-6">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_coordinate_phone">โทรศัพท์</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_coordinate_phone"
+                                        name="pr_coordinate_phone"
+                                        placeholder="โทรศัพท์" required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-2 col-sm-6">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_coordinate_work">สถานที่ทำงาน</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_coordinate_work"
+                                        name="pr_coordinate_work"
+                                        placeholder="สถานที่ทำงาน" required />
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-lg-3 col-sm-6">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label d-none d-sm-block"
+                                        for="pr_coordinate_position">ตำแหน่ง</label>
+                                    <input type="text" class="form-control"
+                                        id="pr_coordinate_position"
+                                        name="pr_coordinate_position"
+                                        placeholder="ตำแหน่ง" required />
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="form-outline mb-2">
+                                    <label class="form-label"
+                                        for="AddfileUpload">
+                                        รูปถ่ายประจำตัว
+                                    </label>
+                                    <input type="file" class="form-control"
+                                        id="AddfileUpload" name="AddfileUpload"
+                                        style="display: none;" accept="image/*" />
+                                    <div class="form-group">
+                                        <label class="form-label "
+                                            for="AddfileUpload">
+                                            <img class="img-thumbnail"
+                                                id="preview"
+                                                src="https://img.icons8.com/external-tanah-basah-glyph-tanah-basah/100/external-upload-image-multimedia-tanah-basah-glyph-tanah-basah.png"
+                                                alt="external-upload-image-multimedia-tanah-basah-glyph-tanah-basah" />
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- button for save and cancel -->
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div
+                                    class="form-outline mb-2 justify-content-end text-end">
+                                    <button type="button"
+                                        class="btn btn-danger btn-block"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#cancelModal">ยกเลิก</button>
+                                    <button type="submit"
+                                        class="btn btn-primary btn-block">บันทึก</button>
+
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                </div>
+                <!-- modal for confirm cancel for reset form-->
+                <div class="modal fade" id="cancelModal"
+                    data-bs-backdrop="static" data-bs-keyboard="false"
+                    tabindex="-1" aria-labelledby="cancelModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog ">
+                        <div class="modal-content ">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5"
+                                    id="cancelModalLabel">ยืนยันการยกเลิก</h1>
+                                <button type="button" class="btn-close"
+                                    data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                คุณต้องการยกเลิกข้อมูลใช่หรือไม่
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary"
+                                    data-bs-dismiss="modal">ยกเลิก</button>
+                                <a type="button" class="btn btn-primary" href>ยืนยัน</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <footer class="bg-dark shadow  ">
+                    <div class="text-light text-center p-2 mt-1">
+                        <p>Copyright &copy; 2021 <a
+                                href="https://www.facebook.com/IL-Chaoprayasurasak-1600161676721692">IL
+                                Chaoprayasurasak</a></p>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <!-- Bootstrap core JS-->
+        <script
+            src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"
+            integrity="sha512-pumBsjNRGGqkPzKHndZMaAG+bir374sORyzM3uulLV14lN5LyykqNk8eEeUlUkB3U0M4FApyaHraT65ihJhDpQ=="
+            crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="js/scripts.js"></script>
+    </body>
+
+</html>
